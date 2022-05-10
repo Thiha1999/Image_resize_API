@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %} Product {% endblock %}
+
+{% block content %}>
+<div class="fish-list">
+    {% for fish in fish %}
+    <div class="fish">
+<h3>
+    {{fish.fishname}}
+</h3>
+    {% if fish.image %}
+    <p>
+        <a href="{% url 'show-fish' fish.id %}">
+            <img width="140px" src="{{ MEDIA_URL }}{{ fish.image }}" />
+        </a>
+    </p>
+    {% endif %}
+    <p>
+        <a href="{% url 'show-fish' fish.id %}"> View </a>
+    </p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
