@@ -1,4 +1,6 @@
 # Image_resize_API
+***Just extract zip file. Just zip file alone is required. other outside files are mistake***
+
 "It has some fields including Image field, therefore ,it can create and retrieve data. 
 Uploaded image will be automatically resized to 140*140.
 In order to use this file, you need to install or have rest_framework, django_resized,. 
